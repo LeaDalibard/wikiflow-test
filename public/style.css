@@ -1,0 +1,23 @@
+
+
+.main {
+    margin-left: 150px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 12px;
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+}

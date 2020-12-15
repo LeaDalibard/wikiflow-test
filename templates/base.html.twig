@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <title>{% block title %}Welcome!{% endblock %}</title>
     {% block stylesheets %}
+
+
+        <link rel="stylesheet" type="text/css" href="../public/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
               integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
               crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
     {% endblock %}
 
-
 </head>
-<body>
-<div class="sidenav">
-    <img src="../resources/wikiflow-log.png" alt="logo wikiflow">
-    <a href="">Homepage</a>
-
-
+<div class="navbar">
+    <a class="navbar-brand" href="https://www.wikiflow.io/fr"><img
+                src="https://d1k976m6pd0u9m.cloudfront.net/public/employer/logo/5f96a179ab945030739941.png.webp"
+                alt="logo wikiflow" width="100"></a>
 </div>
+
+<body class="container">
+
+
 {% block body %}
 
 
@@ -25,6 +30,18 @@
 {% endblock %}
 
 {% block footer %}
+    <nav class="nav">
+        <div class="row container d-flex ">
+            <div class="col-sm-6">
+                <button type="button" class="btn btn-primary btn-rounded btn-icon"><i class="fa fa-user"></i></button>
+                <button type="button" class="btn btn-dark btn-rounded btn-icon"><i class="fa fa-envelope-o"></i>
+                </button>
+                <button type="button" class="btn btn-danger btn-rounded btn-icon"><i class="fa fa-user"></i></button>
+                <button type="button" class="btn btn-info btn-rounded btn-icon"><i class="fa fa-star"></i></button>
+                <button type="button" class="btn btn-success btn-rounded btn-icon"><i class="fa fa-plane"></i></button>
+            </div>
+        </div>
+    </nav>
     &copy; Copyright 2020 by <a href="http://domain.invalid/">Wikiflow</a>.
 {% endblock %}
 
