@@ -259,5 +259,418 @@ class Users
      */
     private $updatedAt = '0000-00-00 00:00:00';
 
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    public function getName(): ?string
+    {
+        return $this->name;
+    }
+
+    public function setName(string $name): self
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    public function getFirstname(): ?string
+    {
+        return $this->firstname;
+    }
+
+    public function setFirstname(?string $firstname): self
+    {
+        $this->firstname = $firstname;
+
+        return $this;
+    }
+
+    public function getLastname(): ?string
+    {
+        return $this->lastname;
+    }
+
+    public function setLastname(?string $lastname): self
+    {
+        $this->lastname = $lastname;
+
+        return $this;
+    }
+
+    public function getGender(): ?string
+    {
+        return $this->gender;
+    }
+
+    public function setGender(?string $gender): self
+    {
+        $this->gender = $gender;
+
+        return $this;
+    }
+
+    public function getAgeRange(): ?string
+    {
+        return $this->ageRange;
+    }
+
+    public function setAgeRange(?string $ageRange): self
+    {
+        $this->ageRange = $ageRange;
+
+        return $this;
+    }
+
+    public function getAgeRangeMax(): ?string
+    {
+        return $this->ageRangeMax;
+    }
+
+    public function setAgeRangeMax(?string $ageRangeMax): self
+    {
+        $this->ageRangeMax = $ageRangeMax;
+
+        return $this;
+    }
+
+    public function getLocale(): ?string
+    {
+        return $this->locale;
+    }
+
+    public function setLocale(?string $locale): self
+    {
+        $this->locale = $locale;
+
+        return $this;
+    }
+
+    public function getLocation(): ?string
+    {
+        return $this->location;
+    }
+
+    public function setLocation(?string $location): self
+    {
+        $this->location = $location;
+
+        return $this;
+    }
+
+    public function getBirthday(): ?string
+    {
+        return $this->birthday;
+    }
+
+    public function setBirthday(?string $birthday): self
+    {
+        $this->birthday = $birthday;
+
+        return $this;
+    }
+
+    public function getType(): ?int
+    {
+        return $this->type;
+    }
+
+    public function setType(int $type): self
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+
+    public function getRole(): ?string
+    {
+        return $this->role;
+    }
+
+    public function setRole(string $role): self
+    {
+        $this->role = $role;
+
+        return $this;
+    }
+
+    public function getEmail(): ?string
+    {
+        return $this->email;
+    }
+
+    public function setEmail(string $email): self
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    public function getAddressId(): ?int
+    {
+        return $this->addressId;
+    }
+
+    public function setAddressId(?int $addressId): self
+    {
+        $this->addressId = $addressId;
+
+        return $this;
+    }
+
+    public function getIsBeta(): ?bool
+    {
+        return $this->isBeta;
+    }
+
+    public function setIsBeta(bool $isBeta): self
+    {
+        $this->isBeta = $isBeta;
+
+        return $this;
+    }
+
+    public function getTutorial(): ?bool
+    {
+        return $this->tutorial;
+    }
+
+    public function setTutorial(bool $tutorial): self
+    {
+        $this->tutorial = $tutorial;
+
+        return $this;
+    }
+
+    public function getTutorialMobile(): ?bool
+    {
+        return $this->tutorialMobile;
+    }
+
+    public function setTutorialMobile(bool $tutorialMobile): self
+    {
+        $this->tutorialMobile = $tutorialMobile;
+
+        return $this;
+    }
+
+    public function getAvatar(): ?string
+    {
+        return $this->avatar;
+    }
+
+    public function setAvatar(string $avatar): self
+    {
+        $this->avatar = $avatar;
+
+        return $this;
+    }
+
+    public function getHasCustomAvatar(): ?bool
+    {
+        return $this->hasCustomAvatar;
+    }
+
+    public function setHasCustomAvatar(?bool $hasCustomAvatar): self
+    {
+        $this->hasCustomAvatar = $hasCustomAvatar;
+
+        return $this;
+    }
+
+    public function getEmailNewFollower(): ?bool
+    {
+        return $this->emailNewFollower;
+    }
+
+    public function setEmailNewFollower(bool $emailNewFollower): self
+    {
+        $this->emailNewFollower = $emailNewFollower;
+
+        return $this;
+    }
+
+    public function getEmailNewRecommendation(): ?bool
+    {
+        return $this->emailNewRecommendation;
+    }
+
+    public function setEmailNewRecommendation(bool $emailNewRecommendation): self
+    {
+        $this->emailNewRecommendation = $emailNewRecommendation;
+
+        return $this;
+    }
+
+    public function getNotificationsAll(): ?bool
+    {
+        return $this->notificationsAll;
+    }
+
+    public function setNotificationsAll(bool $notificationsAll): self
+    {
+        $this->notificationsAll = $notificationsAll;
+
+        return $this;
+    }
+
+    public function getNotificationsWisdoc(): ?bool
+    {
+        return $this->notificationsWisdoc;
+    }
+
+    public function setNotificationsWisdoc(bool $notificationsWisdoc): self
+    {
+        $this->notificationsWisdoc = $notificationsWisdoc;
+
+        return $this;
+    }
+
+    public function getNotificationsRequests(): ?bool
+    {
+        return $this->notificationsRequests;
+    }
+
+    public function setNotificationsRequests(bool $notificationsRequests): self
+    {
+        $this->notificationsRequests = $notificationsRequests;
+
+        return $this;
+    }
+
+    public function getNotificationsInvitations(): ?bool
+    {
+        return $this->notificationsInvitations;
+    }
+
+    public function setNotificationsInvitations(bool $notificationsInvitations): self
+    {
+        $this->notificationsInvitations = $notificationsInvitations;
+
+        return $this;
+    }
+
+    public function getPassword(): ?string
+    {
+        return $this->password;
+    }
+
+    public function setPassword(string $password): self
+    {
+        $this->password = $password;
+
+        return $this;
+    }
+
+    public function getFacebookUserId(): ?string
+    {
+        return $this->facebookUserId;
+    }
+
+    public function setFacebookUserId(string $facebookUserId): self
+    {
+        $this->facebookUserId = $facebookUserId;
+
+        return $this;
+    }
+
+    public function getGoogleId(): ?string
+    {
+        return $this->googleId;
+    }
+
+    public function setGoogleId(?string $googleId): self
+    {
+        $this->googleId = $googleId;
+
+        return $this;
+    }
+
+    public function getRememberToken(): ?string
+    {
+        return $this->rememberToken;
+    }
+
+    public function setRememberToken(?string $rememberToken): self
+    {
+        $this->rememberToken = $rememberToken;
+
+        return $this;
+    }
+
+    public function getValidationToken(): ?string
+    {
+        return $this->validationToken;
+    }
+
+    public function setValidationToken(?string $validationToken): self
+    {
+        $this->validationToken = $validationToken;
+
+        return $this;
+    }
+
+    public function getValidated(): ?bool
+    {
+        return $this->validated;
+    }
+
+    public function setValidated(bool $validated): self
+    {
+        $this->validated = $validated;
+
+        return $this;
+    }
+
+    public function getLastDefaultLanguage(): ?string
+    {
+        return $this->lastDefaultLanguage;
+    }
+
+    public function setLastDefaultLanguage(string $lastDefaultLanguage): self
+    {
+        $this->lastDefaultLanguage = $lastDefaultLanguage;
+
+        return $this;
+    }
+
+    public function getDeletedAt(): ?\DateTimeInterface
+    {
+        return $this->deletedAt;
+    }
+
+    public function setDeletedAt(?\DateTimeInterface $deletedAt): self
+    {
+        $this->deletedAt = $deletedAt;
+
+        return $this;
+    }
+
+    public function getCreatedAt(): ?\DateTimeInterface
+    {
+        return $this->createdAt;
+    }
+
+    public function setCreatedAt(\DateTimeInterface $createdAt): self
+    {
+        $this->createdAt = $createdAt;
+
+        return $this;
+    }
+
+    public function getUpdatedAt(): ?\DateTimeInterface
+    {
+        return $this->updatedAt;
+    }
+
+    public function setUpdatedAt(\DateTimeInterface $updatedAt): self
+    {
+        $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
+
 
 }
